@@ -46,10 +46,10 @@ The project is designed to mirror how data platforms are implemented in industry
 
 - Python ETL Pipeline
 - Medallion Architecture
-- BigQuery Data Warehouse
+- Postgres Data Warehouse
 - Data Validation
 - Data Cleaning
-- Incremental-ready Pipeline
+- Full-load Pipeline
 - Modular Project Structure
 
 ### Data Warehouse
@@ -262,21 +262,6 @@ Evaluation metrics include:
 
 ---
 
-# Documentation
-
-Additional documentation is available in the `/docs` directory.
-
-| Document | Description |
-|-----------|-------------|
-| architecture.md | Overall solution architecture |
-| medallion.md | Bronze, Silver, Gold implementation |
-| pipeline.md | ETL workflow |
-| star_schema.md | Warehouse design |
-| data_dictionary.md | Table & column definitions |
-| dashboard.md | KPI definitions |
-
----
-
 # Future Improvements
 
 - Apache Airflow orchestration
@@ -287,7 +272,6 @@ Additional documentation is available in the `/docs` directory.
 - MLflow
 - CI/CD
 - Docker Deployment
-- Real-time Kafka ingestion
 
 ---
 
