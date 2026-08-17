@@ -85,9 +85,9 @@ The project is designed to mirror how data platforms are implemented in industry
 | Category | Technology |
 |------------|------------|
 | Language | Python |
-| Data Warehouse | Google BigQuery |
-| ETL | Pandas |
-| SQL | BigQuery SQL |
+| Data Warehouse | Postgres SQL |
+| ETL | Pandas, Pyspark |
+| SQL | Postgres SQL |
 | Dashboard | Power BI |
 | Machine Learning | Scikit-learn, XGBoost |
 | Version Control | Git |
