@@ -1,0 +1,49 @@
+from datetime import datetime
+
+def log_step(
+    connection,
+    run_id: int,
+    table_name: str,
+    stage: str,
+    step: str,
+    status: str,
+    message: str | None = None,
+):
+    """
+    Insert one pipeline log record.
+
+    Status examples:
+        SUCCESS
+        WARNING
+        FAILED
+        INFO
+    """
+
+    query = """
+        INSERT INTO pipeline_step_log (
+            run_id,
+            table_name,
+            stage,
+            step,
+            status,
+            message,
+            logged_at
+        )
+        VALUES (%s, %s, %s, %s, %s, %s, %s)
+    """
+
+    with connection.cursor() as cursor:
+        cursor.execute(
+            query,
+            (
+                run_id,
+                table_name,
+                stage,
+                step,
+                status,
+                message,
+                datetime.now(),
+            ),
+        )
+
+    connection.commit()
