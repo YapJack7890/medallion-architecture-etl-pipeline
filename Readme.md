@@ -95,45 +95,6 @@ The project is designed to mirror how data platforms are implemented in industry
 
 ---
 
-# Project Structure
-
-```
-ecommerce-analytics-platform/
-
-│
-
-├── data/
-│   ├── raw/
-│   ├── bronze/
-│   ├── silver/
-│   └── gold/
-│
-├── notebooks/
-│
-├── pipelines/
-│
-├── sql/
-│   ├── bronze/
-│   ├── silver/
-│   └── gold/
-│
-├── models/
-│
-├── dashboards/
-│
-├── docs/
-│   ├── architecture.md
-│   ├── medallion.md
-│   ├── star_schema.md
-│   ├── data_dictionary.md
-│   ├── pipeline.md
-│   └── dashboard.md
-│
-└── README.md
-```
-
----
-
 # Data Pipeline
 
 The pipeline follows the Medallion Architecture.
